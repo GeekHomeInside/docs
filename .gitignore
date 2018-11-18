@@ -10,3 +10,6 @@ hugo*
 /resources/_gen
 
 # End of https://www.gitignore.io/api/hugo
+
+/themes
+.DS_Store
