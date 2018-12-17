@@ -2,16 +2,16 @@ baseURL = "https://geekhomeinside.github.io/docs"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Hugo Learn Documentation"
+title = "GeekHomeInside Tutorials"
 theme = "hugo-theme-learn"
 themesdir = "themes"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "Documentation for Hugo Learn Theme"
-  author = "Mathieu Cornic"
+  editURL = "https://github.com/GeekHomeInside/docs"
+  description = "Tutorials for All"
+  author = "Adrien DEVIENNE"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
@@ -28,7 +28,7 @@ languageName = "English"
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
+url = "https://github.com/GeekHomeInside/docs"
 weight = 10
 
 [[Languages.en.menu.shortcuts]]
@@ -55,7 +55,7 @@ languageName = "Français"
 [[Languages.fr.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> Repo Github"
 identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
+url = "https://github.com/GeekHomeInside/docs"
 weight = 10
 
 [[Languages.fr.menu.shortcuts]]

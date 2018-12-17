@@ -1,3 +1,3 @@
 # docs
 
-Site built with Hugo for GeekHomeInside Tutorials
+Site built with Hugo for [GeekHomeInside Tutorials](https://geekhomeinside.github.io/docs)
