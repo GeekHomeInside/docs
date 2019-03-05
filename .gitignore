@@ -8,7 +8,6 @@ hugo*
 # Generated files at default location
 /public/
 /resources/_gen
-/themes
 .DS_Store
 
 # End of https://www.gitignore.io/api/hugo

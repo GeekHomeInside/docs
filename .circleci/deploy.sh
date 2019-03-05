@@ -23,7 +23,12 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo
+hugo -t hugo-learn-theme
 
 echo "Updating gh-pages branch"
+git config --global user.email $GH_EMAIL
+git config --global user.name $GH_NAME
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
+
+echo "Push Update"
+git push -f

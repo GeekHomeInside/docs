@@ -1,0 +1,36 @@
+version: 2.1
+
+jobs:
+    build:
+        docker:
+            - image: cibuilds/hugo:latest
+        working_directory: ~/hugo
+        environment:
+            - GH_EMAIL: "guiadco@geekhomeinside.com"
+            - GH_NAME: "bot"
+        steps:
+            - add_ssh_keys:
+                fingerprints:
+                  - ""
+            - checkout
+            - run:
+                name: install git
+                command: apk update && apk add git
+            - run:
+                name: Checkout submodules
+                command: git submodule sync && git submodule update --init
+            - run:
+                name: Prepare shell commands
+                command: chmod +x .circleci/deploy.sh
+            - deploy:
+                name: Deploy to Github Pages
+                command: ./.circleci/deploy.sh
+workflows:
+  version: 2.1
+  Build And Deploy WebSite:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
